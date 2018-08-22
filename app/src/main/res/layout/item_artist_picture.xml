@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="3dp"
+                android:layout_gravity="center_horizontal"
+                >
+
+   <!-- <TextView
+        android:id="@+id/horizontal_item_text"
+        android:text="Picture title"
+        android:layout_width="150dp"
+        android:padding="5dp"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>-->
+
+   <ImageView
+        android:id="@+id/pictureID"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+
+        android:adjustViewBounds="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

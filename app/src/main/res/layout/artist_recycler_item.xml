@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+              android:layout_width="120dp"
+              android:layout_height="110dp"
+
+  >
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:id="@+id/artistImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/papiros"
+        android:layout_margin="10dp"
+       />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+
+            android:title="1stItem" />
+        <item
+            android:id="@+id/nav_about"
+
+            android:title="2ndItem" />
+        <item
+            android:id="@+id/nav_settings"
+
+            android:title="3dItem" />
+
+        <item
+            android:id="@+id/navigation_subheader"
+            android:title="SubMenu">
+            <menu>
+                <item
+                    android:id="@+id/navigation_sub_item_1"
+
+                    android:title="1stSubMenu" />
+                <item
+                    android:id="@+id/navigation_sub_item_2"
+
+                    android:title="2SubMenu" />
+            </menu>
+        </item>
+    </group>
+</menu>
