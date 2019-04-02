@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="item_dob_width">100dp</dimen>
+    <dimen name="item_dob_height">80dp</dimen>
 </resources>
