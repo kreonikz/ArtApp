@@ -1,8 +1,7 @@
-package org.com.art.application.Direction;
+package org.kwang.art.direction;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.wangjie.wheelview.R;
@@ -13,17 +12,12 @@ import org.wangjie.wheelview.R;
  */
 public  class SimpleViewHolder extends  RecyclerView.ViewHolder {
          TextView title;
-         ImageView mImageView;
-
-          RecyclerView horizontalList;
-
+         RecyclerView horizontalList;
 
         public SimpleViewHolder(View itemView) {
             super(itemView);
 
             title = (TextView) itemView.findViewById(R.id.course_item_name_tv);
             horizontalList = (RecyclerView) itemView.findViewById(R.id.horizontal_list);
-
         }
-
     }

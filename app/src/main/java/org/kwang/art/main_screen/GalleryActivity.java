@@ -1,4 +1,4 @@
-package org.com.art.application.sample;
+package org.kwang.art.main_screen;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -65,7 +65,6 @@ public class GalleryActivity extends AppCompatActivity {
 
 
         // _pager.setCurrentItem(orderNumber);  // Ссетит пейджер на определенную позицию меняет позицию нижних картинок
-
 
         _closeButton.setOnClickListener(new View.OnClickListener() {
             @Override

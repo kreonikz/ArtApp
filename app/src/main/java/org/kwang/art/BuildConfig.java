@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package org.com.art.application;
+package org.kwang.art;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");

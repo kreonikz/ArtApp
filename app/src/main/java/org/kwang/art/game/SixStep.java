@@ -1,4 +1,4 @@
-package org.com.art.application.gameActivity;
+package org.kwang.art.game;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.wangjie.wheelview.R;
-import org.com.art.application.sample.TimelineActivity;
+import org.kwang.art.main_screen.TimelineActivity;
 
 import java.util.Arrays;
 import java.util.Collections;

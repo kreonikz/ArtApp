@@ -1,4 +1,4 @@
-package org.com.art.application.sample;
+package org.kwang.art.main_screen;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -18,8 +18,8 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.wangjie.wheelview.R;
-import org.com.art.application.WheelView;
-import org.com.art.application.gameActivity.SixStep;
+import org.kwang.art.ui.WheelView;
+import org.kwang.art.game.SixStep;
 
 import java.util.Arrays;
 

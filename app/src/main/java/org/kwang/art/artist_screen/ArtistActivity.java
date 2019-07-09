@@ -1,4 +1,4 @@
-package org.com.art.application.artistactivity;
+package org.kwang.art.artist_screen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -31,8 +31,9 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.WheelViewAlternative;
+import org.kwang.art.dto.Artist;
 import org.wangjie.wheelview.R;
-import org.com.art.application.gameActivity.SixStep;
+import org.kwang.art.game.SixStep;
 
 import java.util.ArrayList;
 

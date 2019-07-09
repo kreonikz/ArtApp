@@ -1,4 +1,4 @@
-package org.com.art.application.artistactivity;
+package org.kwang.art.dto;
 
 /**
  * Created by Wonka on 03.08.2017.

@@ -1,4 +1,4 @@
-package org.com.art.application.sample;
+package org.kwang.art.main_screen;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,11 +17,6 @@ public class CenterZoomLayoutManager extends LinearLayoutManager {
     public CenterZoomLayoutManager(Context context) {
         super(context);
     }
-
-    public CenterZoomLayoutManager(Context context, int orientation, boolean reverseLayout) {
-        super(context, orientation, reverseLayout);
-    }
-
 
     @Override
     public int scrollVerticallyBy(int dy, RecyclerView.Recycler recycler, RecyclerView.State state) {

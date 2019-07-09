@@ -1,7 +1,6 @@
-package org.com.art.application.sample;
+package org.kwang.art.main_screen;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +16,6 @@ import org.wangjie.wheelview.R;
 
 public class StarterActivity extends Activity {
     Button mStart;
-    Context mContext;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

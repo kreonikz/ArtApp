@@ -1,4 +1,4 @@
-package org.com.art.application.Direction;
+package org.kwang.art.direction;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -32,8 +32,9 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 
 import org.WheelViewAlternative;
+import org.kwang.art.dto.Direction;
 import org.wangjie.wheelview.R;
-import org.com.art.application.gameActivity.SixStep;
+import org.kwang.art.game.SixStep;
 
 import java.util.ArrayList;
 
@@ -50,12 +51,10 @@ public class ActivityMainDirection extends AppCompatActivity {
 
     DatabaseReference databaseReference;
 
-    int number,i;
+    int number;
 
     RecyclerView recycler_artist;
     RecyclerView recycler_pictures;
-
-    TextView mTextView;
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     @Override
@@ -68,11 +67,6 @@ public class ActivityMainDirection extends AppCompatActivity {
          progressBar= (ProgressBar) findViewById(R.id.progressBar);
 
         progressBar.setVisibility(View.VISIBLE);
-
-
-
-
-
 
 
         PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName(R.string.drawer_item_home).withSelectable(false).withTextColor(Color.BLACK);
@@ -289,10 +283,4 @@ count++;
         });
 
     }
-
-
-
 }
-
-
-

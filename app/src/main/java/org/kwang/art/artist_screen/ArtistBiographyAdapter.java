@@ -1,4 +1,4 @@
-package org.com.art.application.artistactivity;
+package org.kwang.art.artist_screen;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -26,19 +26,10 @@ public class ArtistBiographyAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     private String [] mDataList;
     int number;
 
-
-
-    public ArtistBiographyAdapter() {
-    }
-
     public ArtistBiographyAdapter(String [] dataList,int number) {
         mDataList = dataList;
         this.number=number;
     }
-
-
-
-
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -46,11 +37,7 @@ public class ArtistBiographyAdapter extends RecyclerView.Adapter<RecyclerView.Vi
         View itemView = LayoutInflater.from(context).inflate(R.layout.item_artist_picture, parent, false);
         ItemViewHolder holder = new ItemViewHolder(itemView);
         mContext=parent.getContext();
-
-
-
         return holder;
-
     }
 
     @Override
@@ -100,12 +87,4 @@ public class ArtistBiographyAdapter extends RecyclerView.Adapter<RecyclerView.Vi
             mPicture= (ImageView) itemView.findViewById(R.id.pictureID);
         }
     }
-
-
-
-
-
-
-
-
 }

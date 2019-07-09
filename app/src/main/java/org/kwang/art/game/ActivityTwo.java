@@ -1,4 +1,4 @@
-package org.com.art.application.gameActivity;
+package org.kwang.art.game;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -44,9 +44,6 @@ public class ActivityTwo extends AppCompatActivity {
                     }
             };
 
-
-            TextView tv_p1,tv_p2;
-
             ImageView iv_11,iv_12,iv_13,iv_14,  iv_21,iv_23,iv_22,iv_24,   iv_31,iv_32,iv_33,iv_34;
             //array for the images
 
@@ -60,14 +57,12 @@ public class ActivityTwo extends AppCompatActivity {
                     image201 ,image202,image203,image204,image205,image206;
 
 
-
-
             int firstCard,secondCard,thirdCard,fourthCard;
             int clickedFirst,clickedSecond,clickedThird,clickedFourth;
-            int cardNumber=1;
+            int cardNumber = 1;
 
-            int turn=1;
-            int playerPoints=0,cpuPoints=0;
+            int turn = 1;
+            int playerPoints = 0,cpuPoints = 0;
 
 
             @Override
@@ -81,9 +76,6 @@ public class ActivityTwo extends AppCompatActivity {
 //        tv_p2= (TextView) findViewById(R.id.tv_p2);
                 mQuant= (TextView) findViewById(R.id.mQuantity);
                 mQuant.setText(String.valueOf(mQuantOfTries));
-
-
-
 
                 iv_11= (ImageView) findViewById(R.id.iv_11);
                 iv_12= (ImageView) findViewById(R.id.iv_12);
@@ -142,14 +134,6 @@ public class ActivityTwo extends AppCompatActivity {
                 doStuff(iv_32,Integer.parseInt((String)iv_32.getTag()));
                 doStuff(iv_33,Integer.parseInt((String)iv_33.getTag()));
                 doStuff(iv_34,Integer.parseInt((String)iv_34.getTag()));
-
-
-
-
-
-
-
-
 
 
                 iv_11.setOnClickListener(new View.OnClickListener() {  //   iv_11.setTag("0");
@@ -275,19 +259,13 @@ public class ActivityTwo extends AppCompatActivity {
 
                     }
                 });
-
-
-
-
-
             }
 
 
 
             private void clickMethod(ImageView iv,int card){
 
-
-                if(cardNumber==1){
+                if(cardNumber == 1){
                     firstCard=cardArray[card];// присваиваем первой карте номер из массива по тэгу
 
                     if(firstCard>200 & firstCard<300){
@@ -305,31 +283,23 @@ public class ActivityTwo extends AppCompatActivity {
 
                 }
 
-                else if(cardNumber==2){
+                else if(cardNumber == 2){
 
-                    secondCard=cardArray[card];
+                    secondCard = cardArray[card];
 
-                    if(secondCard>200 & secondCard<300){
-                        secondCard=secondCard-100;
+                    if(secondCard > 200 & secondCard < 300){
+                        secondCard=secondCard - 100;
                     }  if(secondCard > 300 )
                     {
-                        secondCard=secondCard-200;
+                        secondCard=secondCard - 200;
                     }
-
                     // вписываем количество попыток
 
                     cardNumber=3;
                     clickedSecond=card;
 
                     iv.setEnabled(false);
-
-
-                }
-
-
-
-                else if(cardNumber==3){
-
+                } else if(cardNumber==3){
                     thirdCard=cardArray[card];
 
                     if(thirdCard>200 & thirdCard<300){
@@ -339,9 +309,7 @@ public class ActivityTwo extends AppCompatActivity {
                         thirdCard=thirdCard-200;
                     }
 
-
                     cardNumber=1;
-
 
                     clickedThird=card;
 
@@ -369,22 +337,11 @@ public class ActivityTwo extends AppCompatActivity {
                             calculate();
                         }
                     },700);
-
+                }
             }
-
-
-
-            }
-
-
-
-
-
 
 
         private void doStuff(ImageView iv, int card){
-
-
             //set the correct image to the imageview
 
             if(cardArray[card]==101){// 0
@@ -418,96 +375,7 @@ public class ActivityTwo extends AppCompatActivity {
             }else if(cardArray[card]==304){ // на 11 вьюшку нажимаю
                 iv.setImageResource(image206);
             }
-
-
-            //check which image is selected and save it to temporarily variable
-
-//            if(cardNumber==1){
-//                firstCard=cardArray[card];// присваиваем первой карте номер из массива по тэгу
-//
-//                if(firstCard>200 & firstCard<300){
-//                    firstCard=firstCard-100;
-//                } else if(firstCard > 300)
-//                {
-//                    firstCard=firstCard-200;
-//                }
-//
-//                cardNumber=2;
-//
-//                clickedFirst=card;//тэгу присваивает
-//
-//                iv.setEnabled(false);
-//
-//            }
-//
-//            else if(cardNumber==2){
-//
-//                secondCard=cardArray[card];
-//
-//                if(secondCard>200 & secondCard<300){
-//                    secondCard=secondCard-100;
-//                }  else if(secondCard > 300)
-//                {
-//                    secondCard=secondCard-200;
-//                }
-//
-//                // вписываем количество попыток
-//
-//            cardNumber=3;
-//            clickedSecond=card;
-//
-//            iv.setEnabled(false);
-//
-//
-//        }
-//
-//        else if(cardNumber==3){
-//            thirdCard=cardArray[card];
-//
-//            if(thirdCard>200 & thirdCard<300){
-//                firstCard=firstCard-100;
-//            } else if(thirdCard>300){thirdCard=thirdCard-200;}
-//
-//            cardNumber=1;
-//
-//
-//            clickedThird=card;
-//
-//            iv_11.setEnabled(false);
-//            iv_12.setEnabled(false);
-//            iv_13.setEnabled(false);
-//            iv_14.setEnabled(false);
-//
-//            iv_21.setEnabled(false);
-//            iv_22.setEnabled(false);
-//            iv_23.setEnabled(false);
-//            iv_24.setEnabled(false);
-//
-//            iv_31.setEnabled(false);
-//            iv_32.setEnabled(false);
-//            iv_33.setEnabled(false);
-//            iv_34.setEnabled(false);
-//
-//
-//            Handler handler=new Handler();
-//            handler.postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    //check if selected images are equal
-//                    calculate();
-//                }
-//            },1100);
-//        }
-
-
     }
-
-
-
-
-
-
-
 
 
     private void calculate() {
@@ -614,8 +482,6 @@ public class ActivityTwo extends AppCompatActivity {
             }
 
 
-
-
             //add   points
             if(turn==1){
                 playerPoints++;
@@ -675,15 +541,7 @@ public class ActivityTwo extends AppCompatActivity {
         iv_34.setEnabled(true);
 
         checkEnd();
-
-
-    }
-
-
-
-
-
-
+            }
 
     private void checkEnd(){
         if(iv_11.getVisibility()==View.INVISIBLE &&
@@ -719,9 +577,6 @@ public class ActivityTwo extends AppCompatActivity {
                     finish();
                 }
             });
-
-
-
 
 
             AlertDialog alertDialog1=alertDialog.create();
@@ -763,24 +618,5 @@ public class ActivityTwo extends AppCompatActivity {
         image205=mMainArray[number][10];
         image206=mMainArray[number][11];
 
-
-
-//        image101=mMainArray[0][0];
-//        image102=R.drawable.ic_image102;
-//        image103=R.drawable.ic_image103;
-//        image104=R.drawable.ic_image104;
-//        image105=R.drawable.ic_image105;
-//        image106=R.drawable.ic_image106;
-//
-//        image201=R.drawable.ic_image201;
-//        image202=R.drawable.ic_image202;
-//
-//        image203=R.drawable.ic_image203;
-//
-//        image204=R.drawable.ic_image204;
-//        image205=R.drawable.ic_image205;
-//        image206=R.drawable.ic_image206;
     }
-
-
 }

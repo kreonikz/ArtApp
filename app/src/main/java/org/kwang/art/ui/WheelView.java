@@ -1,4 +1,4 @@
-package org.com.art.application;
+package org.kwang.art.ui;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -24,7 +24,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import org.com.art.application.Direction.ActivityMainDirection;
+import org.kwang.art.direction.ActivityMainDirection;
 
 import java.util.ArrayList;
 import java.util.List;

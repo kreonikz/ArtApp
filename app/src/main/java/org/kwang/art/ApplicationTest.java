@@ -1,4 +1,4 @@
-package org.com.art.application;
+package org.kwang.art;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
